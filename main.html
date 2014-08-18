@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="jquery.min.js"></script>
+    <script src="serial.js"></script>
+  </head>
+  <body>
+    <div id="container">
+    </br>
+      <label>
+        Port:
+        <select id="ports"></select>
+      </label>
+
+      <label>
+        Bit-rate(bits/s):
+        <select id="bitrate">
+          <option value='115200'>115200</option>
+          <option value='57600'>57600</option>
+          <option value='38400'>38400</option>
+          <option value='19200'>19200</option>
+          <option value='9600' selected>9600</option>
+          <option value='4800'>4800</option>
+          <option value='2400'>2400</option>
+          <option value='1200'>1200</option>
+        </select>
+      </label>
+
+      <label>
+        Data bits:
+        <select id="databits">
+          <option value="seven">7</option>
+          <option value="eight" selected>8</option>
+        </select>
+      </label>
+
+      <label>
+        Stop bits:
+        <select id="stopbits">
+          <option value="one" selected>1</option>
+          <option value="two">2</option>
+       </select>
+      </label>
+
+      <label>
+        Parity bits:
+        <select id="paritybit">
+          <option value="no" selected>no</option>
+          <option value="odd">odd</option>
+          <option value="even">even</option>
+        </select>
+      </label>
+
+    </br>
+    </br>
+
+    <label>
+      Connection Status:
+      <span id="status">Disconnected</span>
+    </label>
+
+    </br>
+    </br>
+    
+    <button id="connect">Connect</button>
+    <button id="disconnect">Disconnect</button>
+    </br>
+
+    <div id="leds">
+      <button id="led0" class='led' data-ledid='0' data-ledstate='F'>LED 0</button>    
+      <button id="led1" class='led' data-ledid='1' data-ledstate='F'>LED 1</button>    
+      <button id="led2" class='led' data-ledid='2' data-ledstate='F'>LED 2</button>    
+      <button id="led3" class='led' data-ledid='3' data-ledstate='F'>LED 3</button>    
+      <button id="led4" class='led' data-ledid='4' data-ledstate='F'>LED 4</button>    
+      <button id="led5" class='led' data-ledid='5' data-ledstate='F'>LED 5</button>    
+      <button id="led6" class='led' data-ledid='6' data-ledstate='F'>LED 6</button>    
+      <button id="led7" class='led' data-ledid='7' data-ledstate='F'>LED 7</button>    
+    </div>
+    
+    </br>
+
+    </div>
+      <div id="output">
+      </div>
+  </body>
+</html>

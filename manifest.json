@@ -1,0 +1,18 @@
+{
+  "name": "8051 Serial Communication",
+  "version": "1.0",
+  "manifest_version": 2,
+  "minimum_chrome_version": "33",
+  "description": "Test serial API.",
+
+  "app": {
+    "background": {
+      "scripts": [ "background.js" ],
+      "transient": true
+    }
+  },
+
+  "permissions": [
+    "serial"
+  ]
+}
